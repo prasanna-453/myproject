@@ -9,7 +9,7 @@ public class service {
         try {
 
         }catch (RuntimeException r ){
-            throw new RuntimeException()
+            throw new RuntimeException();
         }
     }
 }
