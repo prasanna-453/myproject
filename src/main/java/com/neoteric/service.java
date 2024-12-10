@@ -8,8 +8,9 @@ public class service {
 
         try {
 
-        }catch (RuntimeException r ){
+        }catch (RuntimeException runtimeException ){
             throw new RuntimeException();
         }
+        System.out.println("runtime exception");
     }
 }

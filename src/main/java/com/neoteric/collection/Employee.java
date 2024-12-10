@@ -2,22 +2,41 @@ package com.neoteric.collection;
 
 public class Employee {
 
-    private String name;
+    private String empId;
 
-    public String getName() {
-        return name;
+    private double salary;
+
+    private String dept;
+
+    public String getEmpId() {
+        return empId;
     }
 
-    private String empid;
-
-    public String getEmpid() {
-        return empid;
+    public void setEmpId(String empId) {
+        this.empId = empId;
     }
 
-    public Employee(String name,String empid)
-    {
-        this.empid=empid;
-        this.name=name;
+    public double getSalary() {
+        return salary;
+    }
 
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "empId='" + empId + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
+
+    public String getDept() {
+        return dept;
+    }
+
+    public void setDept(String dept) {
+        this.dept = dept;
     }
 }
